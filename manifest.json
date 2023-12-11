@@ -1,0 +1,35 @@
+{
+   "browser_action": {
+      "default_icon": {
+         "128": "images/icon128.png",
+         "16": "images/icon16.png",
+         "48": "images/icon48.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [
+      {
+         "js": [
+            "popup.js"
+         ],
+         "matches": [
+            "\u003Call_urls>"
+         ]
+      }
+   ],
+   "description": "Copy text from a specific HTML element",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnuTLGsJ58VPjZG/ZiqAllFjTwQ8ffH+JRyG1uo2iypCKvJBgCSGrXwUZm7mwJwXESGlCe1G+shazqTQHZnM5uhVJ068A9jyUh0G52KPdkeD+TjPRpngemaObPu7CdMF7hWWFYnzAyCxzN1COHU5LVQSLTZ6ZrOIYyIHpSF4WOgL2oZxRpMAo/dgM0TXEDgmr9hg8JcHz1fUL4iNqXidPKY1ADUTXYx9p8SBs7QPbbKzsBhV9QVD8gQ/JPsV5rrknxd/EhzGYlKg374anzMpmCIoMuVA1O5+VRPrm7ma2wF5sEpgB89/i18C5MIQS+r4sJA+sF4Y+Espy/byYwu3HqQIDAQAB",
+   "manifest_version": 2,
+   "name": "SOC-Tools",
+   "permissions": [
+      "activeTab",
+      "clipboardWrite"
+   ],
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+   "version": "1.1"
+}
